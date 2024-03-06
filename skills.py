@@ -97,13 +97,12 @@ def bacth_requests(df,prompts,api_key,batch=2):
         print('Calling gpt======================>')
         gpt = GPT_calls(first_two,api_key)
         skills = get_skills(gpt)
-        print('Updating the df ================>')
         df = populate_df(df,skills)
 
 
 def main():
-    api_key=os.getenv("OPENAI_API_KEY")
-    api_key = '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'
+    #api_key=os.getenv("OPENAI_API_KEY")
+    api_key = #insert API Key Here or create environment variable
 
     courses = pd.read_csv('classes.csv')
     courses['skills'] = None #create an empty skills column
