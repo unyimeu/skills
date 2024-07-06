@@ -63,7 +63,7 @@ def prompt_creation(data):
                        
                        Now, the name of the course is {name} and here is the course description: {descp}\n Please only provide the skills
                        as asked for. An example response could look like this for one hypothetical class:\nPython,Dynamic Programming, Compiler Implementation, Software.
-                       Do not say anythign extra. Just provide the skills no extra words. 
+                       Do not say anything extra. Just provide the skills no extra words. 
                         """)
     
     return prompts
@@ -102,7 +102,7 @@ def bacth_requests(df,prompts,api_key,batch=2):
 
 def main():
     #api_key=os.getenv("OPENAI_API_KEY")
-    api_key = #insert API Key Here or create environment variable
+    api_key = None #insert API Key Here or create environment variable
 
     courses = pd.read_csv('classes.csv')
     courses['skills'] = None #create an empty skills column
