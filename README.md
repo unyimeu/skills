@@ -27,5 +27,5 @@ This project is designed to extract specific skills from MIT course descriptions
 
 3. Run the script:
     ```sh
-    python your_script_name.py
+    python skills.py
     ```
